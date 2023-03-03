@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+    <div class="p-1">
+        <img style="width: 105vw" src="{% static 'image/title_art2.png' %}">
+        <div style="margin-top:0px"></div>
+    </div>
+
+    <div class="p-1">
+        <div class="container">
+            <div class="row row-cols-md-3">
+                <div class="col-lg">
+                    <div class="card shadow-lg">
+                        <div style="background-color:#d2e4f5" class="card-header">
+                            <h1><span style="color:orange;"><b>什麼是DeepFake</b></span></h1>
+                        </div>
+
+                        <div style="background-color:#d2e4f5 " class="card-body">
+
+                            <h3>Deepfake是指利用人工智慧來實現置換人像甚至是音訊的技術，
+                                而該技術在近年常被有心人士用來影響大眾的視聽 =><b>特別是在假新聞和色情媒體上面</b><h3><br>
+
+                            <h3> 其中較著名的例子是2018年外媒Buzzfeed為了讓大眾了解假新聞的嚴重性，
+                                 發出前美國總統歐巴馬羞辱唐納川普的影片。
+                                在色情媒體上，Deepfake技術也常被用於將名人的臉和色情影片中的演員置換，並散布在Pornhub等平台進行非法謀利。
+                            </h3>
+
+
+                            <img style="width: 56vw" src="{% static 'image/obama.png' %}">
+                            <h3><b>真假歐巴馬</b></h3>
+                            <a href="https://www.youtube.com/watch?v=AmUC4m6w1wo&ab_channel=BBCNews">Fake Obama created
+                                using AI video tool - BBC News</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg">
+                    <div class="card shadow-lg">
+                        <img src="{% static 'image/image1.png' %}" alt="" class="card-img-top">
+                        <div style="background-color:#d2e4f5" class="card-header">
+                            <h1 class="card-title"><span style="color:orange;"><b>DeepFake影像生成原理</b></span></h1>
+                        </div>
+                        <div style="background-color:#d2e4f5 " class="card-body">
+
+                            <h3>Deepfake的生成一般會有兩種方法。1. 自動編碼器（AutoEncoder）、
+                                2. 生成對抗網路（Generative Adversarial Network,GAN），兩者都是AI深度學習的應用方式。</h3><br>
+                                <h3>在自動編碼器中，會將人臉A與人臉B，各自準備上百張以後，丟進一組叫「編碼器」的AI模型內。編碼器會搜集人臉特徵數據，並把它們壓縮成特徵向量。這時，會有叫做「解碼器」的兩組不同AI模型，分別讀取這些特徵向量，重建出人臉A及人臉B。經過成百上千回的訓
+                            練，編碼器與解碼器會自行學習調整，重建出更精確的人臉。訓練完後，就到了換臉的階段。這時只要故意將輸入的人臉用「錯誤」的解碼器重建，就能達成目的。</h3>
+                            <h3 class="card-text"></h3>
+                            <img style="width: 56vw" src="{% static 'image/dp_generation.png' %}">
+                            <p class="card-text">（資料來源：G¨uera, David, and Edward J. Delp, “Deepfake
+                                Video Detection
+                                Using
+                                Recurrent Neural Networks,” Published in 15th IEEE International
+                                Conference on Advanced,
+                                2018, DOI:10.1109/avss.2018.8639163）</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-6" >
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg">
+                    <div class="card shadow-lg">
+                        <img src="{% static 'image/image1.png' %}" alt="" class="card-img-top">
+                        <div style="background-color:#d2e4f5" class="card-header">
+                            <h1 class="card-title"><span style="color:orange;"><b>Deepfakes in 台灣</b></span></h1>
+                        </div>
+                        <div style="background-color:#d2e4f5 " class="card-body">
+
+
+                            <h3><span style="color:#f54b2a;"><b>國內近年著名案例：</b></span>2020年底台灣就曾有人指出Telegram群組「台灣網紅挖面」利用Deepfake技術將眾多色情片主角的人臉置換成公眾人物，並於群組內販售，甚至還可出價客製化指定要使用特定受害者的人臉。此案雖
+                            於2021年被偵查破案，但還是嚴重影響許多人。有鑑於此，Deepfake的影響早已遍及台灣和世界各地。</h3>
+
+
+
+
+                            <img style="width: 55vw" src="{% static 'image/news.png' %}">
+                            <h1 class="card-text"></h1>
+                            <a href=https://www.potatomedia.co/post/aa4577e5-e9f7-450d-bad5-eb0bc805d8b4>新聞內容馬上看</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="p-9">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg">
+                    <div class="card shadow-lg">
+                        <img src="{% static 'image/image1.png' %}" alt="" class="card-img-top">
+                        <div style="background-color:#d2e4f5" class="card-header">
+                            <h1><span style="color:orange;"><b>換臉影片可能觸犯刑法什麼罪？</b></span></h1>
+                        </div>
+                        <div style="background-color:#d2e4f5 " class="card-body">
+
+
+                            <br>
+                            <h2><span style="color:#f54b2a;"><b>1.散布猥褻物品罪</b></span></h2>
+                            <h3>目前大多認為可能會涉犯《刑法》的「散布猥褻罪物品罪」和「妨害名譽罪」
+                            Deepfake換臉影片的劇情，如果含有「暴力、性虐待或人獸性交」的情節，
+                             或雖然無關「暴力、性虐待或人獸性交」，但有引起一般人羞恥的性器官裸露、
+                            性行為的內容，且缺乏適當的安全阻隔措施（包裝沒有隔絕並標示「18禁」）
+                            ，就會<b>違反《刑法》的散布猥褻物品罪，刑度是 2 年以下有期徒刑、拘役或</b>
+                            <b>科或併科 9 萬元以下罰金。</b></h3>
+
+                            <br>
+                            <br>
+                            <h2><span style="color:#f54b2a;"><b>2.妨害名譽罪</b></span></h2>
+                            <h3>由於影片已直接將被害人的臉置換到 AV
+                                內容當中，雖然沒有明確使用侮辱或謾罵被害人的文字，但影片本身已足以向觀賞者傳達「羞辱、侮蔑」被害人的意味
+                            ，並讓被害人感受到極大的輕視和痛苦，所以可能會成立公然侮辱罪。
+                            <br>
+                            而換臉影片的內容一旦涉及性交和裸露的色情畫面，社會大眾又難以辨認影片的真實性，不免相信被害人有拍攝 A
+                                片的情節，將嚴重影響被害人在一般人心中的名譽和社會地位，<b>所以也可能會成立誹謗罪──而透過網路散布影片的方式，</b>
+                            <b>更會構成「加重誹謗」。</b>
+                            觸犯刑法公然侮辱罪，可<b>處拘役或 9 千元以下罰金；觸犯刑法加重誹謗罪，則</b><b>將處 2 年以下有期徒刑、拘役或 3 萬元以下罰金。</b></h3>
+                            <br>
+                            <br>
+
+                            <h2><span style="color:#f54b2a;"><b>3.換臉也是性騷擾</b></span></h2>
+                            <h3>性騷擾防治法》指出：違反被害人意願，播送跟性或性別有關的影像，而有損害被害人的人格尊嚴，造成被害人感受敵意或冒犯的情境就是。而換臉影片將被害
+
+
+                                人照片後製成 A 片主角，彷彿讓眾人看見赤裸裸的自己，使被害人深感冒犯和不
+                            舒服，就是一種性騷擾。性騷擾事件的被害人可向直轄市或縣（市）主管機關提
+                            出申訴，主管機關即應開啟調查程序，並可<b>依法對行為人處以新臺幣 1 萬元以上 </b>
+                            <b>10 萬元以下罰鍰。</b></h3>
+                            <img style="width: 56vw" src="{% static 'image/court.png' %}">
+                            <h5>BOLOVTSOVA＠Pexels</h5>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container">
+ <h3 class="card-title">看更多DeepFake知識</h3>
+                <h6>(<a
+                    href=https://www.bnext.com.tw/article/57308/deepfake-autoencoder-gan>Deepfake大解密！「換臉」技術更簡單，到底怎麼辦到的？</a>
+                    <a href="https://pansci.asia/archives/341284">濫用 Deepfake 製作換臉影片，有哪些法律責任？</a>)</h6>
+</div>
+{% endblock  %}

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+    <div class="p-1" id="project">
+    <img style="width: 105vw" src="{% static 'image/title_art2.png' %}">
+    <div style="margin-top:0px"></div>
+</div>
+
+
+<br>
+
+<br>
+<div class="p-7" id="project">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg">
+                <div class="card shadow-lg">
+                    <img src="{% static 'image/image1.png' %}" alt="" class="card-img-top">
+                        <div style="background-color:#d2e4f5" class="card-header">
+                            <h1 class="card-title"><span style="color:orange;"><b>第一次使用說明</b></span></h1>
+                        </div>
+                    <div style="background-color:#d2e4f5 " class="card-body">
+
+                        <h2 class="card-text" style="color:#f54b2a;"><b>系統使用介紹</b></h2>
+                        <img style="width: 55vw" src="{% static 'image/介面_new.png' %}">
+                        <h3>本頁面為系統使用介紹，可讓使用者了解如何使用本網頁。相關危害介紹有許多Deepfake相關科普知識，若想對影片進行偵測則可點擊右上方來進行。</h3>
+                        <br>
+                        <br>
+                        <h2 style="color:#f54b2a;"><b>上傳檔案和偵測</b></h2>
+                        <img style="width: 55vw" src="{% static 'image/select_new.png' %}">
+                        <h3>點選上傳檔案來選取要偵測的影片，注意影片大小是否超過限制，可以透過視窗預覽上傳的內容。</h3>
+                        <br>
+                        <br>
+                        <h2 style="color:#f54b2a;"><b>開始偵測</b></h2>
+                        <img style="width: 55vw" src="{% static 'image/detec_buttom.png' %}">
+                        <h3>點選開始偵測來執行偵測，請稍等片刻來查看最後結果</h3>
+                        <br>
+                        <br>
+                        <h2 style="color:#f54b2a;"><b>偽造機率</b></h2>
+                        <img style="width: 55vw" src="{% static 'image/detec_acc.png' %}">
+                        <h3>偽造機率則是模型對該影片真實程度判斷的量化。</h3>
+                        <br>
+                        <br>
+                        <h2 style="color:#f54b2a;"><b>偵測類別</b></h2>
+                        <img style="width: 55vw" src="{% static 'image/detec_result.png' %}">
+                        <h3>透過我們的模型來判斷上傳的影片有無經過偽造，若是真的影片將顯示真實影片，若是判斷為經過假造的影片則會顯示經過偽造。</h3>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock  %}
